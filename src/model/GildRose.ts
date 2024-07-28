@@ -1,4 +1,4 @@
-import { IItem } from '../type';
+import { IItem } from '../types';
 
 const MIN_QUALITY = 0;
 const MAX_QUALITY = 50;

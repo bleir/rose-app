@@ -1,8 +1,6 @@
-import {IItem} from "./type";
+import { IItem, IItemsArray } from "./types";
 
-export const ItemList = ({ items }: any) => {
-
-	console.log(items);
+export const ItemList = ({ items }: IItemsArray) => {
 	return (
 		<div>
 			<h1>Items</h1>

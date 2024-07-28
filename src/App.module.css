@@ -4,4 +4,25 @@
 
 .button {
   padding: 10px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button:hover {
+  background: #eaeaea;
+  color: #333;
+  cursor: pointer;
+}
+
+.button:active {
+  margin-top: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  line-height: 26px;
 }

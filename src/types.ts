@@ -3,3 +3,7 @@ export interface IItem {
 	sellIn: number;
 	quality: number;
 }
+
+export interface IItemsArray {
+	items: IItem[];
+}
