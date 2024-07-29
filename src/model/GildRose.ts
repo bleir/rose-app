@@ -28,6 +28,9 @@ export class GildedRose {
 				break;
 			case 'Sulfuras, Hand of Ragnaros':
 				break;
+			case 'Conjured':
+				this.updateConjured(item);
+				break;
 			default:
 				this.updateNormalItem(item);
 		}
@@ -65,6 +68,12 @@ export class GildedRose {
 		}
 	}
 
+	updateConjured(item: IItem) {
+		if (item.quality > MIN_QUALITY) {
+			item.quality -= 2;
+		}
+	}
+
 	handleExpiredItem(item: IItem) {
 		switch (item.name) {
 			case 'Aged Brie':
@@ -74,6 +83,11 @@ export class GildedRose {
 				break;
 			case 'Backstage passes to a TAFKAL80ETC concert':
 				item.quality = MIN_QUALITY;
+				break;
+			case 'Conjured':
+				if (item.quality > MIN_QUALITY) {
+					item.quality -= 2;
+				}
 				break;
 			default:
 				if (item.quality > MIN_QUALITY) {
